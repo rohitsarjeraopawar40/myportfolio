@@ -49,7 +49,7 @@ const Navbar = () => {
             <li
               key={item.id}
               className={`cursor-pointer hover:text-[#8245ec] ${
-                setActive === item.id ? "text-[#8245ec]" : ""
+                active === item.id ? "text-[#8245ec]" : ""
               }`}
             >
               <button onClick={() => handleMenuItemClick(item.id)}>
