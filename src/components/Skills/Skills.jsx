@@ -1,10 +1,12 @@
 import React from "react";
 import { SkillsInfo } from "../../constant";
+import Tilt from "react-parallax-tilt";
+import ReactParallaxTilt from "react-parallax-tilt";
 const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-24 pb-24 px-[12vw]  md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient"
+      className="py-24 pb-24 px-[12vw]  md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom"
     >
       {/* section title  */}
       <div className="text-center mb-8">
@@ -16,7 +18,7 @@ const Skills = () => {
         </p>
       </div>
       {/* skills catagery  */}
-      <div className="flex flex-wrap gap-1 lg:gap-5 py-10 justify-between">
+      <div className="flex flex-wrap gap-1 lg:gap-5 py-10 justify-between cursor-pointer">
         {SkillsInfo.map((category) => (
           <div
             key={category.title}
@@ -26,6 +28,15 @@ const Skills = () => {
               {category.title}
             </h3>
             {/* skills item  */}
+            <Tilt
+              
+              tiltMaxAngleX={20}
+              tiltMaxAngleY={20}
+              perspective={1000}
+              scale={1.05}
+              transitionSpeed={1000}
+              gyroscope={true}
+            >
             <div className="grid grid-cols-2 gap-4 w-full">
               {category.skills.map((skill) => (
                 <div
@@ -43,6 +54,7 @@ const Skills = () => {
                 </div>
               ))}
             </div>
+            </Tilt>
           </div>
         ))}
       </div>

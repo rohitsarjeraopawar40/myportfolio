@@ -44,10 +44,9 @@ const About = () => {
           {/* About Paragraph */}
           <p className="text-base sm:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
             I am a Java full-stack developer skilled in building modern web
-            applications using React.js and Spring Boot. While I may not have
-            professional experience yet, I am passionate about learning and
-            creating real-world projects to sharpen my skills and become
-            industry-ready.
+            applications using React.js and Spring Boot. Though I am still gaining professional
+            experience, I am deeply passionate about learning and consistently build real-world
+            projects to sharpen my skills and become industry-ready.
           </p>
 
           {/* Resume Button */}
@@ -78,7 +77,7 @@ const About = () => {
           >
             <img
               src={profile}
-              alt="Rohit Pawar Profile"
+              alt="Rohit Pawar profile picture"
               className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
               loading="lazy"
             />
