@@ -7,6 +7,9 @@ import Education from './components/Education/Education'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import BlurBlob from './BlurBlob'
+import Experiance from './components/Experiance/Experiance'
+
+
 
 const App = () => {
   return (
@@ -21,6 +24,7 @@ const App = () => {
         <Navbar />
         <About />
         <Skills />
+        <Experiance />
         <Work />
         <Education />
         <Contact />
