@@ -15,7 +15,6 @@ const Experience = () => {
           A collection of my work experience and the roles I have taken in various organizations
         </p>
       </div>
-
       {/* Timeline */}
       <div className="relative">
         {/* Vertical line */}
